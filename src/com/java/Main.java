@@ -2,6 +2,7 @@ package com.java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -21,6 +22,10 @@ public class Main {
         list.add(p2);
         list.add(p3);
         list.add(p4);
+
+        List<Persion> list1 =  list.stream().filter(age -> age.getAge() > 20).collect(Collectors.toList());
+
+
 
     }
 }
