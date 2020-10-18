@@ -11,6 +11,16 @@ public class Main {
         System.out.println("This is my First Git Project with Intellij");
 
         final List<Persion> list = new ArrayList();
+        Persion p = new Persion("A",23,1234);
+        Persion p1 = new Persion("B", 25, 12367);
+        Persion p2 = new Persion("C", 26,23451);
+        Persion p3 = new Persion("D", 32, 98272);
+        Persion p4 = new Persion("E",34,123451);
+        list.add(p);
+        list.add(p1);
+        list.add(p2);
+        list.add(p3);
+        list.add(p4);
 
     }
 }
@@ -19,6 +29,12 @@ class Persion{
     private String name;
     private int age;
     private  int id;
+
+    public Persion(String name, int age, int id) {
+        this.name = name;
+        this.age = age;
+        this.id = id;
+    }
 
     public int getAge() {
         return age;
