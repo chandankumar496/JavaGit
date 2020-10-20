@@ -24,6 +24,7 @@ public class Main {
         list.add(p4);
 
         List<Persion> list1 =  list.stream().filter(age -> age.getAge() > 20).collect(Collectors.toList());
+        System.out.println(list1);
 
 
 
