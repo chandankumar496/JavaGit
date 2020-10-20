@@ -24,7 +24,9 @@ public class Main {
         list.add(p4);
 
         List<Persion> list1 =  list.stream().filter(age -> age.getAge() > 20).collect(Collectors.toList());
-        System.out.println(list1);
+        for( Persion persion : list1)
+            System.out.println(persion);
+
 
 
 
@@ -35,6 +37,15 @@ class Persion{
     private String name;
     private int age;
     private  int id;
+
+    @Override
+    public String toString() {
+        return "Persion{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", id=" + id +
+                '}';
+    }
 
     public Persion(String name, int age, int id) {
         this.name = name;
